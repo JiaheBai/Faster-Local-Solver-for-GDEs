@@ -39,3 +39,9 @@ We provide an experiment code for testing the impact of $\epsilon$ on the comput
 ```
 python test_epsilon.py --dataset wiki-talk --alpha 0.1 --opt_omega True --test_num 50
 ```
+The results will be stored in './results/wiki-talk_ppr_exp_ratio_result.npy'. To visualize some results, you can run this command:
+```
+visualize_wiki-talk_epsilon_GD.py
+```
+Then you can get 'wiki-talk_ppr_exp_gd_ratio.png' under folder `figs`. It's the first figure of Figure 5 in our paper and it looks like:
+![image](https://github.com/JiaheBai/Faster-Local-Solver-for-GDEs/blob/master/figs/wiki-talk_ppr_exp_gd_ratio.png)
