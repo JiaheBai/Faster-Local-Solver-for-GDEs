@@ -12,7 +12,7 @@ We provide a PPR experiment demo. You can run this command:
 python demo.py --dataset wiki-talk --eps 1e-7 --alpha 0.1 --opt_omega True --test_num 50
 ```
 This code will randomly select 50 points from the wiki-talk dataset and compute the PPR vectors using all methods we have implemented. It will output the average running time and number of operations for each method. The output looks like:
-'''
+```
 wiki-talk:
 local_sor_opers : 13487658.94
 local_sor_algo_times : 1.4423852968867867
@@ -32,10 +32,10 @@ global_ch_opers : 280855608.0
 global_ch_algo_times : 11.393353031598963
 local_gd_gpu_algo_times : 0.12180607559625059
 global_gd_gpu_algo_times : 1.7817821394117213
-'''
+```
 ## Testing the impact of $\epsilon$ on the computation of PPR
 
 We provide an experiment code for testing the impact of $\epsilon$ on the computation of PPR. You can run this command:
-'''
+```
 python test_epsilon.py --dataset wiki-talk --alpha 0.1 --opt_omega True --test_num 50
-'''
+```
