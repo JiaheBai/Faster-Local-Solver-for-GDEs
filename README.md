@@ -44,4 +44,5 @@ The results will be stored in './results/wiki-talk_ppr_exp_ratio_result.npy'. To
 python visualize_wiki-talk_epsilon_GD.py
 ```
 Then you can get 'wiki-talk_ppr_exp_gd_ratio.png' under folder `figs`. It's the first figure of Figure 5 in our paper and it looks like:
+
 <img src="figs/wiki-talk_ppr_exp_gd_ratio.png" width=50%>
