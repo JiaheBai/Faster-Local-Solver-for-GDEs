@@ -3,7 +3,7 @@ This repository contains an implementation of Faster Local Solvers for Graph Dif
 
 ## Code
 
-The ppr_solver.py, katz_solver.py, hk_solver.py, and InstantGNN.py are main algorithm codes and others are preprocessing codes.
+The `ppr_solver.py`, `katz_solver.py`, `hk_solver.py`, and `InstantGNN.py` are main algorithm codes and others are preprocessing codes.
 
 ## Requirement
 
@@ -69,3 +69,6 @@ The results will be stored in `./results/instantGNN_ogbn-arxiv_fwd_result.npz` a
 python visualize_ogbn-arxiv_InstantGNN.py
 ```
 Then you can get `ogbn-arxiv_instantGNN_runtime.png` and `ogbn-arxiv_instantGNN_accuracy.png` under folder `figs`. It's Figure 8 in our paper and it looks like:
+
+<img src="figs/ogbn-arxiv_instantGNN_runtime.png" width=60%>
+<img src="figs/ogbn-arxiv_instantGNN_accuracy.png" width=35%>
