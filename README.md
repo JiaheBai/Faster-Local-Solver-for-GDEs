@@ -5,6 +5,13 @@ This repository contains an implementation of Faster Local Solvers for Graph Dif
 
 The ppr_solver.py, katz_solver.py, hk_solver.py, and InstantGNN.py are main algorithm codes and others are preprocessing codes.
 
+## Requirement
+
+The `requirements.txt` file lists all Python libraries that our code depend on, and they will be installed using:
+```
+pip install -r requirements.txt
+```
+
 ## Running the demo
 
 We provide a PPR experiment demo. You can run this command:
@@ -39,3 +46,26 @@ We provide an experiment code for testing the impact of $\epsilon$ on the comput
 ```
 python test_epsilon.py --dataset wiki-talk --alpha 0.1 --opt_omega True --test_num 50
 ```
+The results will be stored in `./results/wiki-talk_ppr_exp_ratio_result.npy`. To visualize some results, you can run this command:
+```
+python visualize_wiki-talk_epsilon_GD.py
+```
+Then you can get `wiki-talk_ppr_exp_gd_ratio.png` under folder `figs`. It's the first figure of Figure 5 in our paper and it looks like:
+
+<img src="figs/wiki-talk_ppr_exp_gd_ratio.png" width=50%>
+
+## Running the experiments on GNN models
+
+We provide an experiment code for GNN models on ogbn-arxiv dataset. To use it, you should run this command first:
+```
+python data_process_GNN.py --dataset 'ogbn-arxiv' --delnum 950000 --snapshots 16
+```
+This code will construct a dynamic graph procedure and store it in `./dataset/ogbn-arxiv-exp.npz`. Then you can this command for dynamic PPR approximating and GNN models training:
+```
+python instantGNN-arxiv-exp.py
+```
+The results will be stored in `./results/instantGNN_ogbn-arxiv_fwd_result.npz` and `./results/instantGNN_ogbn-arxiv_sor_result.npz`. To visualize it,  you can run this command:
+```
+python visualize_ogbn-arxiv_InstantGNN.py
+```
+Then you can get `ogbn-arxiv_instantGNN_runtime.png` and `ogbn-arxiv_instantGNN_accuracy.png` under folder `figs`. It's Figure 8 in our paper and it looks like:
