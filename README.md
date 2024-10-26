@@ -70,5 +70,4 @@ python visualize_ogbn-arxiv_InstantGNN.py
 ```
 Then you can get `ogbn-arxiv_instantGNN_runtime.png` and `ogbn-arxiv_instantGNN_accuracy.png` under folder `figs`. It's Figure 8 in our paper and it looks like:
 
-<img src="figs/ogbn-arxiv_instantGNN_runtime.png" width=60%>
-<img src="figs/ogbn-arxiv_instantGNN_accuracy.png" width=35%>
+<img src="figs/ogbn-arxiv_instantGNN_runtime.png" width=60%><img src="figs/ogbn-arxiv_instantGNN_accuracy.png" width=35%>
