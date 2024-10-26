@@ -3,7 +3,7 @@ This repository contains an implementation of Faster Local Solvers for Graph Dif
 
 ## Code
 
-The `ppr_solver.py`, `katz_solver.py`, `hk_solver.py`, and `InstantGNN.py` are main algorithm codes and others are preprocessing codes.
+The `ppr_solver.py`, `katz_solver.py`, `hk_solver.py`, and `InstantGNN.py` are main algorithm codes and others are preprocessing and experiment codes.
 
 ## Requirement
 
