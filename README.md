@@ -67,7 +67,7 @@ We provide an experiment code for GNN models on ogbn-arxiv dataset. To use it, y
 ```
 python data_process_GNN.py --dataset 'ogbn-arxiv' --delnum 950000 --snapshots 16
 ```
-This code will construct a dynamic graph procedure and store it in `./dataset/ogbn-arxiv-exp.npz`. Then you can this command for dynamic PPR approximating and GNN models training:
+This code will construct a dynamic graph procedure and store it in `./dataset/ogbn-arxiv-exp.npz`. Then you can run this command for dynamic PPR approximating and GNN models training:
 ```
 python instantGNN-arxiv-exp.py
 ```
@@ -77,4 +77,4 @@ python visualize_ogbn-arxiv_InstantGNN.py
 ```
 Then you can get `ogbn-arxiv_instantGNN_runtime.png` and `ogbn-arxiv_instantGNN_accuracy.png` under folder `figs`. It's Figure 8 in our paper and it looks like:
 
-<img src="figs/ogbn-arxiv_instantGNN_runtime.png" width=60%><img src="figs/ogbn-arxiv_instantGNN_accuracy.png" width=35%>
+<img src="figs/ogbn-arxiv_instantGNN_runtime.png" width=55%><img src="figs/ogbn-arxiv_instantGNN_accuracy.png" width=35%>
