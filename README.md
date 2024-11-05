@@ -1,5 +1,5 @@
 # Faster Local Solvers for Graph Diffusion Equations
-This repository contains an implementation of Faster Local Solvers for Graph Diffusion Equations by Jiahe Bai, Baojian Zhou, Deqing Yang, Yanghua Xiao, to appear at NIPS 2024.
+This repository contains an implementation of [Faster Local Solvers for Graph Diffusion Equations](https://arxiv.org/pdf/2410.21634) by Jiahe Bai, Baojian Zhou, Deqing Yang, Yanghua Xiao, to appear at NIPS 2024.
 
 ## Code
 
@@ -57,7 +57,7 @@ The results will be stored in `./results/wiki-talk_ppr_exp_ratio_result.npy`. To
 ```
 python visualize_wiki-talk_epsilon_GD.py
 ```
-Then you can get `wiki-talk_ppr_exp_gd_ratio.png` under folder `figs`. It's the first figure of Figure 5 in our paper and it looks like:
+Then you can get `wiki-talk_ppr_exp_gd_ratio.png` under folder `figs`. It's the first figure of Figure 6 in our paper and it looks like:
 
 <img src="figs/wiki-talk_ppr_exp_gd_ratio.png" width=50%>
 
